@@ -3,91 +3,91 @@ const questions = [
     {
         question: "Как ты реагируешь, когда кто-то занял твоё место?",
         answers: [
-            { text: "Начинаю громко возмущаться", type: "angry" },
-            { text: "Думаю: 'Ну ладно, пойду поем'", type: "hungry" },
-            { text: "Вежливо объясняю ситуацию", type: "smart" },
-            { text: "Просто сажусь на другое место", type: "normal" }
+            { text: "Начну пинать ногами это чучело", type: "angry" },
+            { text: "Щас бы заточить что то...", type: "hungry" },
+            { text: "Начну говорить что я дитя солнца", type: "smart" },
+            { text: "уйду, потому что слабый", type: "normal" }
         ]
     },
     {
         question: "Что ты делаешь первым делом утром?",
         answers: [
-            { text: "Злюсь на будильник", type: "angry" },
-            { text: "Бегу к холодильнику", type: "hungry" },
-            { text: "Планирую свой день", type: "smart" },
-            { text: "Иду умываться как все", type: "normal" }
+            { text: "злюсь, потому что нужно идти в шарагу", type: "angry" },
+            { text: "Закажу ка пожрать", type: "hungry" },
+            { text: "Засвечусь как солнце", type: "smart" },
+            { text: "Сразу зайду в чат вога и напишу хуйню", type: "normal" }
         ]
     },
     {
         question: "Тебе предложили решить сложную задачу. Твои действия?",
         answers: [
-            { text: "Кто вообще это придумал?!", type: "angry" },
-            { text: "Сначала перекушу, потом подумаю", type: "hungry" },
-            { text: "С удовольствием возьмусь!", type: "smart" },
-            { text: "Попробую, но без фанатизма", type: "normal" }
+            { text: "Кто ты такой мне что то предлагать?", type: "angry" },
+            { text: "съем задачу", type: "hungry" },
+            { text: "напишу целую лекцию которая не имеет смысла", type: "smart" },
+            { text: "бля, загуглю", type: "normal" }
         ]
     },
     {
         question: "Как ты проводишь выходные?",
         answers: [
-            { text: "Всё раздражает, лежу дома", type: "angry" },
-            { text: "Хожу по кафе и ресторанам", type: "hungry" },
-            { text: "Читаю книги и развиваюсь", type: "smart" },
-            { text: "Как обычно, ничего особенного", type: "normal" }
+            { text: "ебанная клеш рояль нахуй", type: "angry" },
+            { text: "лежу на диване что бы не тратить силы", type: "hungry" },
+            { text: "высираю опять хуйню в чат", type: "smart" },
+            { text: "смотрю ютуб, листаю тики токи", type: "normal" }
         ]
     },
     {
         question: "Что ты закажешь в кафе?",
         answers: [
-            { text: "Буду ругаться с официантом", type: "angry" },
-            { text: "ВСЁ МЕНЮ!", type: "hungry" },
-            { text: "Что-то полезное для мозга", type: "smart" },
-            { text: "Обычный кофе с круассаном", type: "normal" }
+            { text: "закажу официанта", type: "angry" },
+            { text: "Вкуснейшую пиццу", type: "hungry" },
+            { text: "ебанных броколей", type: "smart" },
+            { text: "ало нахуй у Руслана нету денег", type: "normal" }
         ]
     },
     {
         question: "Друг попросил у тебя денег в долг. Что скажешь?",
         answers: [
-            { text: "Ещё чего! Никаких долгов!", type: "angry" },
-            { text: "Только если купишь мне еды", type: "hungry" },
-            { text: "Давай обсудим условия", type: "smart" },
-            { text: "Ну ладно, держи", type: "normal" }
+            { text: "Иди нахуй", type: "angry" },
+            { text: "У меня ток на дошик осталось , сори", type: "hungry" },
+            { text: "коинами вернешь", type: "smart" },
+            { text: "денег нет СУКА", type: "normal" }
         ]
     },
     {
         question: "Как ты ведёшь себя в очереди?",
         answers: [
-            { text: "Постоянно ворчу и тороплю всех", type: "angry" },
-            { text: "Представляю, что буду есть дома", type: "hungry" },
-            { text: "Спокойно жду и читаю статьи", type: "smart" },
-            { text: "Просто стою и жду", type: "normal" }
+            { text: "ворчу как ебанный дед", type: "angry" },
+            { text: "толкаю что бы быстрее пробили мою хуйню", type: "hungry" },
+            { text: "стою и впитываю так как я боюсь всех", type: "smart" },
+            { text: "у меня нет денег, я не стою в очереди", type: "normal" }
         ]
     },
     {
         question: "Какой у тебя любимый фильм?",
         answers: [
-            { text: "Боевики с драками!", type: "angry" },
-            { text: "Кулинарные шоу", type: "hungry" },
-            { text: "Документалки и научная фантастика", type: "smart" },
-            { text: "Не знаю, смотрю что попадётся", type: "normal" }
+            { text: "я анимээээшник", type: "angry" },
+            { text: "где есть хавчик", type: "hungry" },
+            { text: "про солнце", type: "smart" },
+            { text: "я не смотрю нихуя", type: "normal" }
         ]
     },
     {
         question: "Тебя попросили выступить перед аудиторией. Твоя реакция?",
         answers: [
-            { text: "Да кто вы такие вообще?!", type: "angry" },
+            { text: "агрессивно ворчать и плакать", type: "angry" },
             { text: "Можно после обеда?", type: "hungry" },
-            { text: "Отлично! Люблю делиться знаниями", type: "smart" },
-            { text: "Ну... попробую", type: "normal" }
+            { text: "съебались , псы", type: "smart" },
+            { text: "ЭУАУУА (звуки макаки)", type: "normal" }
         ]
     },
     {
         question: "Что для тебя самое важное в жизни?",
         answers: [
-            { text: "Чтобы никто не раздражал!", type: "angry" },
-            { text: "Вкусная еда каждый день", type: "hungry" },
-            { text: "Знания и саморазвитие", type: "smart" },
-            { text: "Стабильность и покой", type: "normal" }
+            { text: "деп в казик+коины", type: "angry" },
+            { text: "вкусность", type: "hungry" },
+            { text: "ебанные, длинные философские сообщения", type: "smart" },
+            { text: "Xd Xd", type: "normal" }
         ]
     }
 ];
@@ -95,7 +95,7 @@ const questions = [
 // Add silly answers to each question
 questions.forEach(q => {
     const sillyAnswers = [
-        "Надену на голову кастрюлю и буду танцевать",
+        "Я хуй знает что тут писать",
         "Спрошу у рыбки в аквариуме",
         "Притворюсь деревом",
         "Начну разговаривать с потолком",
@@ -116,31 +116,31 @@ const results = {
     angry: {
         emoji: "😠",
         title: "Злой Руслан",
-        description: "Ты вспыльчивый и эмоциональный! Тебя легко вывести из себя, но зато ты всегда говоришь правду в лицо. Твоя страсть — двигатель прогресса!",
+        description: "Ты злой Руслан, пиздец анлак",
         color: "angry"
     },
     hungry: {
         emoji: "🍔",
         title: "Голодный Руслан",
-        description: "Еда — твоя главная страсть! Ты знаешь все рестораны в городе и готов на всё ради вкусного обеда. Путь к твоему сердцу точно лежит через желудок!",
+        description: "Как говорит Руслан, заточить бы щас вкусность!",
         color: "hungry"
     },
     smart: {
         emoji: "🧠",
         title: "Умный Руслан",
-        description: "Ты настоящий интеллектуал! Любишь решать сложные задачи, читать книги и развиваться. Друзья часто обращаются к тебе за советом!",
+        description: "такого не видел, миф",
         color: "smart"
     },
     normal: {
         emoji: "😐",
         title: "Обычный Руслан",
-        description: "Ты спокойный и уравновешенный человек. Не любишь крайности и предпочитаешь стабильность. Надёжный друг и отличный собеседник!",
+        description: "базовый Руслан, обычный, глуповатый, как обучно",
         color: "normal"
     },
     silly: {
         emoji: "🤪",
         title: "Глупый Руслан",
-        description: "Ты — душа компании! Твой юмор и нестандартное мышление делают жизнь ярче. Кто сказал, что нужно быть серьёзным? Только не ты!",
+        description: "Этот пельмень еще тупее чем мой холодильник, похуй",
         color: "silly"
     }
 };
@@ -189,10 +189,10 @@ function showScreen(screen) {
 function renderQuestion() {
     const question = questions[currentQuestion];
     questionText.textContent = question.question;
-    
+
     answersContainer.innerHTML = '';
     const letters = ['A', 'B', 'C', 'D', 'E'];
-    
+
     question.answers.forEach((answer, index) => {
         const btn = document.createElement('button');
         btn.className = 'answer-btn';
@@ -203,7 +203,7 @@ function renderQuestion() {
         btn.addEventListener('click', () => selectAnswer(answer.type, btn));
         answersContainer.appendChild(btn);
     });
-    
+
     progressFill.style.width = `${((currentQuestion + 1) / questions.length) * 100}%`;
     progressText.textContent = `${currentQuestion + 1} / ${questions.length}`;
 }
@@ -213,10 +213,10 @@ function selectAnswer(type, btn) {
     // Visual feedback
     document.querySelectorAll('.answer-btn').forEach(b => b.classList.remove('selected'));
     btn.classList.add('selected');
-    
+
     // Update score
     scores[type]++;
-    
+
     // Next question or show result
     setTimeout(() => {
         currentQuestion++;
@@ -233,25 +233,25 @@ function showResult() {
     // Find the type with highest score
     let maxScore = 0;
     let resultType = 'normal';
-    
+
     for (const [type, score] of Object.entries(scores)) {
         if (score > maxScore) {
             maxScore = score;
             resultType = type;
         }
     }
-    
+
     const result = results[resultType];
     const percent = Math.round((maxScore / questions.length) * 100);
-    
+
     resultEmoji.textContent = result.emoji;
     resultTitle.textContent = result.title;
     resultTitle.className = `result-title ${result.color}`;
     resultDescription.textContent = result.description;
     resultPercent.textContent = `${percent}%`;
-    
+
     showScreen(resultScreen);
-    
+
     // Haptic feedback on Telegram
     if (tg?.HapticFeedback) {
         tg.HapticFeedback.notificationOccurred('success');
@@ -271,7 +271,7 @@ function shareResult() {
     const resultType = Object.entries(scores).reduce((a, b) => a[1] > b[1] ? a : b)[0];
     const result = results[resultType];
     const shareText = `${result.emoji} Я — ${result.title}! Пройди тест "Какой ты Руслан?" и узнай свой тип!`;
-    
+
     if (tg) {
         tg.shareUrl ? tg.shareUrl(window.location.href, shareText) : null;
     } else {
@@ -315,7 +315,7 @@ if (tg?.BackButton) {
             resetQuiz();
         }
     });
-    
+
     // Show/hide back button based on screen
     const observer = new MutationObserver(() => {
         if (startScreen.classList.contains('active')) {
@@ -324,7 +324,7 @@ if (tg?.BackButton) {
             tg.BackButton.show();
         }
     });
-    
+
     observer.observe(startScreen, { attributes: true, attributeFilter: ['class'] });
     observer.observe(quizScreen, { attributes: true, attributeFilter: ['class'] });
     observer.observe(resultScreen, { attributes: true, attributeFilter: ['class'] });

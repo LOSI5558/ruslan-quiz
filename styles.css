@@ -5,11 +5,11 @@
 }
 
 :root {
-    --bg-primary: #0f0f1a;
-    --bg-secondary: #1a1a2e;
-    --bg-card: rgba(255, 255, 255, 0.05);
-    --text-primary: #ffffff;
-    --text-secondary: rgba(255, 255, 255, 0.7);
+    --bg-primary: #f5f5f7;
+    --bg-secondary: #ffffff;
+    --bg-card: rgba(102, 126, 234, 0.08);
+    --text-primary: #1a1a2e;
+    --text-secondary: rgba(26, 26, 46, 0.7);
     --accent-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --accent-color: #667eea;
     --angry-color: #ef4444;
@@ -19,6 +19,7 @@
     --silly-color: #a855f7;
     --border-radius: 16px;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --card-border: rgba(102, 126, 234, 0.3);
 }
 
 body {
@@ -36,9 +37,9 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: 
-        radial-gradient(circle at 20% 20%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(118, 75, 162, 0.15) 0%, transparent 50%);
+    background:
+        radial-gradient(circle at 20% 20%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(118, 75, 162, 0.1) 0%, transparent 50%);
     pointer-events: none;
     z-index: -1;
 }
@@ -69,6 +70,7 @@ body::before {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -76,13 +78,27 @@ body::before {
 }
 
 @keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.05); }
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 /* Start Screen */
@@ -132,17 +148,35 @@ body::before {
     padding: 8px 14px;
     border-radius: 20px;
     font-size: 13px;
-    font-weight: 500;
-    background: var(--bg-card);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    font-weight: 600;
+    background: white;
+    border: 2px solid;
 }
 
-.type-badge.angry { border-color: var(--angry-color); color: var(--angry-color); }
-.type-badge.hungry { border-color: var(--hungry-color); color: var(--hungry-color); }
-.type-badge.smart { border-color: var(--smart-color); color: var(--smart-color); }
-.type-badge.normal { border-color: var(--normal-color); color: var(--normal-color); }
-.type-badge.silly { border-color: var(--silly-color); color: var(--silly-color); }
+.type-badge.angry {
+    border-color: var(--angry-color);
+    color: var(--angry-color);
+}
+
+.type-badge.hungry {
+    border-color: var(--hungry-color);
+    color: var(--hungry-color);
+}
+
+.type-badge.smart {
+    border-color: var(--smart-color);
+    color: var(--smart-color);
+}
+
+.type-badge.normal {
+    border-color: var(--normal-color);
+    color: var(--normal-color);
+}
+
+.type-badge.silly {
+    border-color: var(--silly-color);
+    color: var(--silly-color);
+}
 
 /* Buttons */
 .primary-btn {
@@ -174,15 +208,15 @@ body::before {
 }
 
 .primary-btn.secondary {
-    background: var(--bg-card);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: white;
+    color: var(--accent-color);
+    border: 2px solid var(--card-border);
     box-shadow: none;
     margin-bottom: 12px;
 }
 
 .primary-btn.secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: none;
+    background: var(--bg-card);
 }
 
 /* Progress */
@@ -196,7 +230,7 @@ body::before {
 .progress-bar {
     flex: 1;
     height: 8px;
-    background: var(--bg-card);
+    background: rgba(102, 126, 234, 0.15);
     border-radius: 4px;
     overflow: hidden;
 }
@@ -229,6 +263,7 @@ body::before {
     font-weight: 700;
     line-height: 1.4;
     margin-bottom: 28px;
+    color: var(--text-primary);
 }
 
 .answers-container {
@@ -246,17 +281,17 @@ body::before {
     font-weight: 500;
     text-align: left;
     color: var(--text-primary);
-    background: var(--bg-card);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: white;
+    border: 2px solid var(--card-border);
     border-radius: var(--border-radius);
     cursor: pointer;
     transition: var(--transition);
-    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
 }
 
 .answer-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.2);
+    background: var(--bg-card);
+    border-color: var(--accent-color);
     transform: translateX(4px);
 }
 
@@ -267,6 +302,7 @@ body::before {
 .answer-btn.selected {
     background: var(--accent-gradient);
     border-color: transparent;
+    color: white;
 }
 
 .answer-letter {
@@ -275,15 +311,17 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--bg-card);
     border-radius: 8px;
     font-weight: 700;
     font-size: 14px;
     flex-shrink: 0;
+    color: var(--accent-color);
 }
 
 .answer-btn.selected .answer-letter {
     background: rgba(255, 255, 255, 0.2);
+    color: white;
 }
 
 /* Result Screen */
@@ -309,11 +347,25 @@ body::before {
     margin-bottom: 16px;
 }
 
-.result-title.angry { color: var(--angry-color); }
-.result-title.hungry { color: var(--hungry-color); }
-.result-title.smart { color: var(--smart-color); }
-.result-title.normal { color: var(--normal-color); }
-.result-title.silly { color: var(--silly-color); }
+.result-title.angry {
+    color: var(--angry-color);
+}
+
+.result-title.hungry {
+    color: var(--hungry-color);
+}
+
+.result-title.smart {
+    color: var(--smart-color);
+}
+
+.result-title.normal {
+    color: var(--normal-color);
+}
+
+.result-title.silly {
+    color: var(--silly-color);
+}
 
 .result-description {
     font-size: 16px;
@@ -328,9 +380,9 @@ body::before {
     align-items: center;
     gap: 24px;
     padding: 20px 32px;
-    background: var(--bg-card);
+    background: white;
     border-radius: var(--border-radius);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 2px solid var(--card-border);
     margin-bottom: 32px;
 }
 
@@ -360,7 +412,7 @@ body::before {
 .stat-divider {
     width: 1px;
     height: 40px;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--card-border);
 }
 
 /* Responsive */
@@ -368,23 +420,16 @@ body::before {
     .start-content h1 {
         font-size: 26px;
     }
-    
+
     .question-text {
         font-size: 18px;
     }
-    
+
     .result-title {
         font-size: 24px;
     }
-    
+
     .result-emoji {
         font-size: 80px;
     }
-}
-
-/* Telegram Theme Support */
-body.tg-theme {
-    --bg-primary: var(--tg-theme-bg-color, #0f0f1a);
-    --text-primary: var(--tg-theme-text-color, #ffffff);
-    --accent-color: var(--tg-theme-button-color, #667eea);
 }
